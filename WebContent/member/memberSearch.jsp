@@ -13,7 +13,7 @@
 <title>memberSearch.jsp</title>
 </head>
 <body>	<%-- http://localhost//memberSearch.do --%>
-<title>회원검색</title>
+<h3>회원검색</h3>
 <a href = "${pageContext.request.contextPath}/memberList.do">전체검색</a>
 <form action = "${pageContext.request.contextPath}/memberSearch.do">
 <input type="hidden" name="job" value="search"> 
