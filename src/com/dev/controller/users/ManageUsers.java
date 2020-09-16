@@ -1,4 +1,4 @@
-package com.dev.controller;
+package com.dev.controller.users;
 
 import java.io.IOException;
 
@@ -8,11 +8,11 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.dev.common.Controller;
 
-public class MemberSearchPageController implements Controller {
+public class ManageUsers implements Controller {
 
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.getRequestDispatcher("/member/memberSearch.jsp").forward(request, response);
+		//return "users/userList_Json.jsp";
 	}
 
 }

@@ -3,6 +3,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 <style>
 * {
   box-sizing: border-box;
@@ -129,8 +134,8 @@ body {
 <div class="row">
   <div class="leftcolumn">
   	<decorator:body/>
-   
   </div>
+  
   <div class="rightcolumn">
   	 <div class="card">
       <h2>TITLE HEADING</h2>
