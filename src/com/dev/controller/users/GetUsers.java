@@ -16,8 +16,8 @@ public class GetUsers implements Controller {
 
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//파라미터를 vo에 담기
 		String id = request.getParameter("id");
+		//파라미터를 vo에 담기
 		UsersVO usersVO = new UsersVO(id); 
 		
 		//조회 처리

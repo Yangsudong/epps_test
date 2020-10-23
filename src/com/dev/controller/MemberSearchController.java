@@ -22,7 +22,7 @@ public class MemberSearchController implements Controller {
 			path = "memberDelete.jsp";
 		} else if(job.equals("update")) {
 			path = "memberUpdate.jsp";
-		}
+		}  
 		
 		//파라미터 변수에 저장
 		String id = request.getParameter("id");
