@@ -7,6 +7,6 @@
 <title>index.jsp</title>
 </head>
 <body>
-<% response.sendRedirect("memberList.do"); %>
+<% response.sendRedirect("boardList.do"); %>
 </body>
 </html>

@@ -1,4 +1,4 @@
-package com.dev.common;
+package common;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -23,6 +23,7 @@ public class ConnectionManager {
 			Context initContext = new InitialContext();
 			DataSource ds = (DataSource)initContext.lookup("java:/comp/env/jdbc/oracle");
 			conn = ds.getConnection();   //conn 을 할당받음
+			
 			System.out.println("dbcp에서 conn 할당");
 		}catch(Exception e) {
 			e.printStackTrace();
