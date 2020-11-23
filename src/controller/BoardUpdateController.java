@@ -17,21 +17,29 @@ public class BoardUpdateController implements Controller {
 	
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//수정처리
-		response.setContentType("text/html;charset=UTF-8");
-		request.setCharacterEncoding("UTF-8");
-		BoardVO boardVO = new BoardVO();
+		// 파라미터를 VO에 담기
+		String board_id = request.getParameter("board_id");
+		String company_name = request.getParameter("company_name");
+		String title = request.getParameter("title");
+		String writer = request.getParameter("writer");
+		String content = request.getParameter("content");
+		String password = request.getParameter("password");
+		String upload_file = request.getParameter("upload_file");
 		
-		try {
-			BeanUtils.copyProperties(boardVO, request.getParameterMap());
-		} catch(Exception e) {
-			e.printStackTrace();
-		}
+		//유효성 체크
+		BoardVO board = new BoardVO();
+		board.setBoard_id(board_id);
+		board.setCompany_name(company_name);
+		board.setTitle(title);
+		board.setWriter(writer);
+		board.setContent(content);;
+		board.setPassword(password);
+		board.setUpload_file(upload_file);
 		
 		BoardDAO dao = new BoardDAO();
-		dao.update(boardVO);
+		dao.update(board);
 		
 		//목록으로 이동
-		request.getRequestDispatcher("/boardList.do").forward(request, response);
+		response.sendRedirect("boardList.do");
 	}
 }

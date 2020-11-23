@@ -16,8 +16,8 @@ public class ConnectionManager {
 		try {
 			//driverManager 이용하여 연결
 /*		Class.forName("oracle.jdbc.OracleDriver");
-			String jdbc_url = "jdbc:oracle:thin:@localhost:1521:xe";
-			conn = DriverManager.getConnection(jdbc_url, "hr", "hr");
+			String jdbc_url = "jdbc:oracle:thin:@epps.co.kr:1521:DEVCOM";
+			conn = DriverManager.getConnection(jdbc_url, "meet", "meet1234");
 */
 			//datasource를 이용하여 connection 획득
 			Context initContext = new InitialContext();

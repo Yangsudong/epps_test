@@ -19,7 +19,7 @@ function inputCheck() {
 		frm.password.focus();
 		return false;		
 	}	
-	if(frm.title.value == ""){
+	if(frm.title.value == ""){	
 		window.alert("제목 입력");
 		frm.title.focus();
 		return false;		
@@ -28,7 +28,7 @@ function inputCheck() {
 } 
 
 function btnListHome() {
-	location.href="boardList.do";
+	location.href="${pageContext.request.contextPath}/boardList.do";
 }
 </script>
 </head>
@@ -50,8 +50,8 @@ function btnListHome() {
 				
 			<div>
 			<p align="right">
-				<button type="submit" class="btn btn-sm btn-primary" >저장</button>  
-				<button type="button" class="btn btn-sm btn-primary" onclick="history.back(-1);">목록</button>
+				<button type="submit" class="btn btn-sm btn-primary">저장</button>  
+				<button type="button" class="btn btn-sm btn-primary" onclick="btnListHome()">목록</button>
 			</p>
 			</div>
 			</form>					

@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context>
+	<!--
 	<Resource name="jdbc/oracle" auth="Container"
 		type="javax.sql.DataSource" driverClassName="oracle.jdbc.OracleDriver"
 		url="jdbc:oracle:thin:@127.0.0.1:1521:xe" 
 		username="test" password="test"
 		maxTotal="20" maxIdle="10" maxWaitMillis="-1" />
-		
+	
+	 -->
+	<Resource name="jdbc/oracle" auth="Container"
+		type="javax.sql.DataSource" driverClassName="oracle.jdbc.OracleDriver"
+		url="jdbc:oracle:thin:@epps.co.kr:1521:DEVCOM" 
+		username="meet" password="meet1234"
+		maxTotal="20" maxIdle="10" maxWaitMillis="-1" />	
+	
 </Context>

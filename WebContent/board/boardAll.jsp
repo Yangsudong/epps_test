@@ -33,7 +33,7 @@ function btnUpdate() {
 	var board_id = $("input[name='checkbox']:checked").val();
 	var check_num = $("input[name='checkbox']:checked").length;
 	if(board_id == null){
-		alert("체크후 조회");
+		alert("체크후 수정");
 	}
 	else if(check_num>1){
 		alert("하나만 체크");

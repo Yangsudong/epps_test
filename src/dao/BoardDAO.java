@@ -232,9 +232,9 @@ public class BoardDAO {
 		 conn = ConnectionManager.getConnnect();
 			
 			//2.sql 구문 실행
-		 	String sql = "INSERT INTO NOTICE_YANGSUDONG ("
-		 				+ "BOARD_ID, WRITE_DATE, COMPANY_NAME, TITLE, WRITER, CONTENT, PASSWORD, UPLOAD_FILE)"
-		 				+ "VALUES(BOARD_SEQ.NEXTVAL,SYSDATE,?,?,?,?,?,?)";
+		 	String sql = "INSERT INTO NOTICE_YANGSUDONG ( "
+		 				+ " BOARD_ID, WRITE_DATE, COMPANY_NAME, TITLE, WRITER, CONTENT, PASSWORD, UPLOAD_FILE) "
+		 				+ " VALUES(BOARD_SEQ.NEXTVAL,SYSDATE,?,?,?,?,?,?) ";
 
 			PreparedStatement pstmt = conn.prepareStatement(sql);
 
@@ -257,6 +257,5 @@ public class BoardDAO {
 		}
 		return r;
 	}
-	
 	
 }
